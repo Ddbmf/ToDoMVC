@@ -54,12 +54,12 @@ var app = app || {};
 
 			// Fetch the todos and the collectionObservable will update once the models are loaded
 			this.todos.collection().fetch();
-			/*
+			
 			// Use a Backbone router to update the filter mode
 			new Backbone.Router().route('*filter', null, function (filter) { self.filterMode(filter || ''); });
 			Backbone.history.start();
 		},
-*/
+		
 		// Create a new model in the underlying collection and the observable will automatically synchronize
 		onAddTodo: function (self, e) {
 			if (e.keyCode === ENTER_KEY && $.trim(self.title())) {
