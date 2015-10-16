@@ -1,4 +1,4 @@
-/*global Knockback */
+/*global Knockback 
 var app = app || {};
 
 (function () {
@@ -54,3 +54,4 @@ var app = app || {};
 		}
 	});
 })();
+*/
