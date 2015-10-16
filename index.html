@@ -3,14 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Knockback.js • TodoMVC</title>
-		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+	<!--	<link rel="stylesheet" href="node_modules/todomvc-common/base.css"> -->
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 	</head>
 	<body>
 		<section class="todoapp" kb-inject="AppViewModel">
 			<header class="header">
 				<h1>Todos</h1>
-				<input class="new-todo" type="text" data-bind="value: title, valueUpdate: 'afterkeydown', event: {keyup: onAddTodo}" placeholder="What needs to be done?" autofocus>
+				<input class="new-todo" type="text" data-bind="value: title, valueUpdate: 'afterkeydown', event: {keyup: onAddTodo}" placeholder="Add Todos..." autofocus>
 			</header>
 			<section class="main" data-bind="visible: todoStats().tasksExist">
 				<input class="toggle-all" type="checkbox" data-bind="checked: toggleCompleted">
@@ -48,16 +48,7 @@
 				<button class="clear-completed" data-bind="visible: todoStats().completedCount, click: onClearCompleted">Clear completed</button>
 			</footer>
 		</section>
-		<!--
-		<footer class="info">
-			<p>Double-click to edit a todo</p>
-			<p>Created by <a href="https://github.com/kmalakoff">Kevin Malakoff</a>. <br/>
-			Please try out the <a href="http://kmalakoff.github.com/knockback-todos-app/">enhanced version</a> <br/>
-			with localization, priority colors, and lazy loading <br/>
-			to see just how dynamic <a href="https://github.com/kmalakoff/knockback">Knockback.js</a> can be!</p>
-			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
-		</footer>
-		-->
+		
 		<!-- App Dependencies -->
 		
 		<script src="node_modules/todomvc-common/base.js"></script>
