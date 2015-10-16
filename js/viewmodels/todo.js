@@ -1,4 +1,4 @@
-/*global Knockback 
+
 var app = app || {};
 
 (function () {
@@ -26,7 +26,7 @@ var app = app || {};
 		},
 
 		onDestroy: function (self) { self.model().destroy(); },
-
+/*
 		// Start editing if not already editing.
 		onCheckEditBegin: function (self) {
 			if (!self.editing()) {
@@ -52,6 +52,6 @@ var app = app || {};
 				}
 			}
 		}
+		*/
 	});
 })();
-*/
