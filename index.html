@@ -9,7 +9,7 @@
 	<body>
 		<section class="todoapp" kb-inject="AppViewModel">
 			<header class="header">
-				<h1>todos</h1>
+				<h1>Todos</h1>
 				<input class="new-todo" type="text" data-bind="value: title, valueUpdate: 'afterkeydown', event: {keyup: onAddTodo}" placeholder="What needs to be done?" autofocus>
 			</header>
 			<section class="main" data-bind="visible: todoStats().tasksExist">
@@ -45,6 +45,7 @@
 				<button class="clear-completed" data-bind="visible: todoStats().completedCount, click: onClearCompleted">Clear completed</button>
 			</footer>
 		</section>
+		<!--
 		<footer class="info">
 			<p>Double-click to edit a todo</p>
 			<p>Created by <a href="https://github.com/kmalakoff">Kevin Malakoff</a>. <br/>
@@ -53,8 +54,9 @@
 			to see just how dynamic <a href="https://github.com/kmalakoff/knockback">Knockback.js</a> can be!</p>
 			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
 		</footer>
-
+		-->
 		<!-- App Dependencies -->
+		<!--
 		<script src="node_modules/todomvc-common/base.js"></script>
 		<script src="node_modules/jquery/dist/jquery.js"></script>
 		<script src="node_modules/underscore/underscore.js"></script>
@@ -62,11 +64,12 @@
 		<script src="node_modules/knockout/build/output/knockout-latest.debug.js"></script>
 		<script src="node_modules/knockback/knockback.js"></script>
 		<script src="node_modules/backbone.localstorage/backbone.localStorage.js"></script>
-
-		<!-- App and Components -->
+		-->
+		<!-- App and Components 
 		<script src="js/models/todo.js"></script>
 		<script src="js/collections/todos.js"></script>
 		<script src="js/viewmodels/todo.js"></script>
 		<script src="js/viewmodels/app.js"></script>
+		-->
 	</body>
 </html>
