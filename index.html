@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Knockback.js • TodoMVC</title>
-	<!--	<link rel="stylesheet" href="node_modules/todomvc-common/base.css"> -->
+
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 		
 	</head>
@@ -33,19 +33,7 @@
 					<strong data-bind="text: todoStats().remainingCount">0</strong>
 					<span data-bind="text: getLabel(todoStats().remainingCount)"></span> left
 				</span>
-				<!--
-				<ul class="filters">
-					<li>
-						<a href="#/" data-bind="css: {selected: filterMode()==''}">All</a>
-					</li>
-					<li>
-						<a href="#/active" data-bind="css: {selected: filterMode()=='active'}">Active</a>
-					</li>
-					<li>
-						<a href="#/completed" data-bind="css: {selected: filterMode()=='completed'}">Completed</a>
-					</li>
-				</ul>
-				-->
+			
 				<button class="clear-completed" data-bind="visible: todoStats().completedCount, click: onClearCompleted">Clear completed</button>
 			</footer>
 		</section>
