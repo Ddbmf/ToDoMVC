@@ -19,7 +19,7 @@ var app = app || {};
 			this.title = ko.observable('');
 
 			// The function used for filtering is dynamically selected based on the filterMode.
-			/*
+			
 			this.filterMode = ko.observable('');
 			var filterFn = ko.computed(function () {
 				switch (self.filterMode()) {
@@ -30,7 +30,7 @@ var app = app || {};
 				};
 				return (function () { return true; });
 			});
-			*/
+			
 			// A collectionObservable can be used to hold the instance of the collection.
 			this.todos = kb.collectionObservable(new app.Todos(), app.TodoViewModel, {filters: filterFn});
 
